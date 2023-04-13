@@ -3,7 +3,9 @@
     Create a few variables that store a value of string, number, and boolean. Choose your own topic.
 */
 
-//CODE HERE
+let pizza = "5 meat treat"
+let quantity = 10
+let isGood = true
 
 
 // ***** Array ***** //
@@ -11,28 +13,30 @@
     Create an array of strings called 'codingLanguage' that include 4 coding language of your choice. 
 */
 
-let codingLanguages = ['Python', 'JavaScript', 'HTML', "C++"]
+let codingLanguages = ['Python', 'JavaScript', 'HTML', 'C++']
 
 
 /* 
     Access the 3rd element of the 'codingLanguage' array.
 */
 
-console.log(codingLanguages.slice(2,1))
+console.log(codingLanguages[2])
 
 
 /*
     Copy the array using one of the array methods, and call it 'codingLanguage2.'
 */
 
-//CODE HERE
+let codingLanguage2 = codingLanguages.slice(0)
+console.log(codingLanguage2)
 
 
 /* 
     Add another coding language to the codingLanguage2 array.
 */
 
-//CODE HERE
+codingLanguage2.push('Rust')
+console.log(codingLanguage2)
 
 
 // !!! Don't edit the code below !!! //
