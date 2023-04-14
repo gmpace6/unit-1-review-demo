@@ -3,77 +3,68 @@
     Create a few variables that store a value of string, number, and boolean. Choose your own topic.
 */
 
-let pizza = "5 meat treat"
-let quantity = 10
-let isGood = true
-
+let pizza = "5 meat treat";
+let quantity = 10;
+let isGood = true;
 
 // ***** Array ***** //
 /*
     Create an array of strings called 'codingLanguage' that include 4 coding language of your choice. 
 */
 
-let codingLanguages = ['Python', 'JavaScript', 'HTML', 'C++']
-
+let codingLanguages = ["Python", "JavaScript", "HTML", "C++"];
 
 /* 
     Access the 3rd element of the 'codingLanguage' array.
 */
 
-console.log(codingLanguages[2])
-
+console.log(codingLanguages[2]);
 
 /*
     Copy the array using one of the array methods, and call it 'codingLanguage2.'
 */
 
-let codingLanguage2 = codingLanguages.slice(0)
-console.log(codingLanguage2)
-
+let codingLanguage2 = codingLanguages.slice(0);
+console.log(codingLanguage2);
 
 /* 
     Add another coding language to the codingLanguage2 array.
 */
 
-codingLanguage2.push('Rust')
-console.log(codingLanguage2)
-
+codingLanguage2.push("Rust");
+console.log(codingLanguage2);
 
 // !!! Don't edit the code below !!! //
-let instruments = ['piano', 'trumpet', 'xylophone', 'flute', 'cello']
+let instruments = ["piano", "trumpet", "xylophone", "flute", "cello"];
 // !!! Don't edit the code above !!! //
 
 /* 
     Use a built-in array function to remove 'cello' from the instruments array.
 */
 
-instruments.splice(4,1)
-console.log(instruments)
-
+instruments.splice(4, 1);
+console.log(instruments);
 
 /* 
     Use a built-in array function to remove 'piano' from the instruments array
 */
 
-instruments.shift()
-console.log(instruments)
-
+instruments.shift();
+console.log(instruments);
 
 /* 
     Use a built-in array function to add 'guitar' to the front of the instruments array
 */
 
-instruments.unshift('guitar')
-console.log(instruments)
-
+instruments.unshift("guitar");
+console.log(instruments);
 
 /* 
     Use a built-in array function to replace 'xylophone' in the instruments array to 'glockenspiel.'
 */
 
-instruments.splice(2,1,'glockenspiel')
-console.log(instruments)
-
+instruments.splice(2, 1, "glockenspiel");
+console.log(instruments);
 
 // ***** if-else ***** //
 /* 
@@ -89,12 +80,11 @@ let num = 11;
     If num is an even number, print num. Otherwise, print 'num is not an even number.'
 */
 
-if(num % 2 ===0) {
-    console.log(num)
-}else{
-    console.log('num is not an even number')
+if (num % 2 === 0) {
+  console.log(num);
+} else {
+  console.log("num is not an even number");
 }
-
 
 // !!! Don't edit the code below !!! //
 let score = 83;
@@ -108,17 +98,15 @@ let score = 83;
     If the the score is above 70, print 'The grade is A.'
 */
 
-if(score > 71){
-    console.log('The grade is A.')
-} else if (score <= 40){
-    console.log('The grade is B.')
-} else if (score <= 10){
-    console.log('The grade is C.')
+if (score > 71) {
+  console.log("The grade is A.");
+} else if (score <= 40) {
+  console.log("The grade is B.");
+} else if (score <= 10) {
+  console.log("The grade is C.");
 } else {
-    console.log('Failed.')
+  console.log("Failed.");
 }
-
-
 
 // ***** For Loop ***** //
 /* 
@@ -133,36 +121,35 @@ let price = [10, 5, 6];
     Using for loop, calculate the total price from the 'price' array above.
 */
 
-let totalPrice = 0
-for (i = 0; i <= price.length; i++) {
-    console.log([i]+totalPrice)
+let totalPrice = 0;
+for (i = 0; i < price.length; i++) {
+  totalPrice += price[i];
+  console.log(totalPrice);
 }
-
-
-
 
 /* 
     Using the 'totalPrice,' find the average of 'price.'
 */
 
-console.log(totalPrice / price.length)
+console.log(totalPrice / price.length);
 
 // !!! Don't edit the code below !!! //
-let colors = ['red', 'green', 'yellow', 'red', 'green']
+let colors = ["red", "green", "yellow", "red", "green"];
 // !!! Don't edit the code above !!! //
 
 /* 
     Loop through the colors array above. Then, print 'apple' if the color is red, print 'melon' if the color is green, and print 'banana' when the color is yellow.
 */
 
-for(i = 0; i <= colors.length-1; i++){
-    if (colors[i] = 'red') {console.log("apple")
-} else if (colors[i] = 'melon') {console.log("green")
-} else {console.log("yellow")
+for (i = 0; i < colors.length; i++) {
+  if ((colors[i] === "red")) {
+    console.log("apple");
+  } else if ((colors[i] === "green")) {
+    console.log("melon");
+  } else {
+    console.log("banana");
+  }
 }
-}
-
-
 
 // ***** Software Development Life Cycle (SDLC) ***** //
 /* 
@@ -189,4 +176,3 @@ for(i = 0; i <= colors.length-1; i++){
         -- git push
     - How to push git to github
 */
-
