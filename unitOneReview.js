@@ -156,8 +156,8 @@ let colors = ['red', 'green', 'yellow', 'red', 'green']
 */
 
 for(i = 0; i <= colors.length-1; i++){
-    if (colors[i] = "red") {console.log("apple")
-} else if (colors[i] = "melon") {console.log("green")
+    if (colors[i] = 'red') {console.log("apple")
+} else if (colors[i] = 'melon') {console.log("green")
 } else {console.log("yellow")
 }
 }
