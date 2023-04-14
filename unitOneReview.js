@@ -47,29 +47,32 @@ let instruments = ['piano', 'trumpet', 'xylophone', 'flute', 'cello']
     Use a built-in array function to remove 'cello' from the instruments array.
 */
 
-//CODE HERE
+instruments.splice(4,1)
+console.log(instruments)
 
 
 /* 
     Use a built-in array function to remove 'piano' from the instruments array
 */
 
-//CODE HERE
+instruments.shift()
+console.log(instruments)
 
 
 /* 
     Use a built-in array function to add 'guitar' to the front of the instruments array
 */
 
-//CODE HERE
+instruments.unshift('guitar')
+console.log(instruments)
 
 
 /* 
     Use a built-in array function to replace 'xylophone' in the instruments array to 'glockenspiel.'
 */
 
-//CODE HERE
-
+instruments.splice(2,1,'glockenspiel')
+console.log(instruments)
 
 
 // ***** if-else ***** //
@@ -86,7 +89,11 @@ let num = 11;
     If num is an even number, print num. Otherwise, print 'num is not an even number.'
 */
 
-//CODE HERE
+if(num % 2 ===0) {
+    console.log(num)
+}else{
+    console.log('num is not an even number')
+}
 
 
 // !!! Don't edit the code below !!! //
