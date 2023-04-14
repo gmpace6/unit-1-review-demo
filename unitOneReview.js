@@ -134,7 +134,7 @@ let price = [10, 5, 6];
 */
 
 let totalPrice = 0
-for (i = 0, i < price.length, i++){
+for (i = 0; i < price.length; i++) {
     console.log([i]+totalPrice)
 }
 
