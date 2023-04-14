@@ -103,12 +103,20 @@ let score = 83;
     Refer to the score variable above.
     Using if-else statement, determine the grade of the above score.
     If the score is less than and equal to 10, print 'Failed.'
-    If the the score is between 10 and 41, print 'The grade is C.'
-    If the the score is between 40 and 71, print 'The grade is B.'
+    If the the score is between 10 and 41[39], print 'The grade is C.'
+    If the the score is between 40 and 71[69], print 'The grade is B.'
     If the the score is above 70, print 'The grade is A.'
 */
 
-//CODE HERE
+if(score > 71){
+    console.log('The grade is A.')
+} else if (score <= 40){
+    console.log('The grade is B.')
+} else if (score <= 10){
+    console.log('The grade is C.')
+} else {
+    console.log('Failed.')
+}
 
 
 
@@ -125,7 +133,11 @@ let price = [10, 5, 6];
     Using for loop, calculate the total price from the 'price' array above.
 */
 
-//CODE HERE
+let totalPrice = 0
+for (i = 0, i < price.length, i++){
+    console.log([i]+totalPrice)
+}
+
 
 
 
