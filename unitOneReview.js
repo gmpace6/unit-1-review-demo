@@ -134,7 +134,7 @@ let price = [10, 5, 6];
 */
 
 let totalPrice = 0
-for (i = 0; i < price.length; i++) {
+for (i = 0; i <= price.length; i++) {
     console.log([i]+totalPrice)
 }
 
@@ -145,7 +145,7 @@ for (i = 0; i < price.length; i++) {
     Using the 'totalPrice,' find the average of 'price.'
 */
 
-
+console.log(totalPrice / price.length)
 
 // !!! Don't edit the code below !!! //
 let colors = ['red', 'green', 'yellow', 'red', 'green']
@@ -155,7 +155,12 @@ let colors = ['red', 'green', 'yellow', 'red', 'green']
     Loop through the colors array above. Then, print 'apple' if the color is red, print 'melon' if the color is green, and print 'banana' when the color is yellow.
 */
 
-// CODE HERE
+for(i = 0; i <= colors.length-1; i++){
+    if (colors[i] = "red") {console.log("apple")
+} else if (colors[i] = "melon") {console.log("green")
+} else {console.log("yellow")
+}
+}
 
 
 
